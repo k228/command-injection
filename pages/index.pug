@@ -1,0 +1,15 @@
+html 
+  head 
+    title="NodeJS Command Injection Example"
+
+  body 
+    h1="List Folders"  
+
+    form(action="/" method="GET") 
+      input(type="text" name="filename"  placeholder="filename") 
+      textArea( name="text" placeholder="text") 
+      input(type="text" name="password"  placeholder="password") 
+      button(type="submit") Submit
+
+    code 
+      pre #{output}
